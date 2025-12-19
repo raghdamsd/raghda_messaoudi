@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Powerful Tools, Simple Pricing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Liens Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <style>
+        /* body{
+            background-image: url("../images/logo1.jpg");
+            background-repeat: no-repeat;
+        } */
+        /* MENU NAV */
+        nav {
+            background-color: #e3f2fd;
+        }
+
+        nav a {
+            color: #000 !important;
+        }
+
+        nav a:hover {
+            color: #000;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /* Élément actif */
+        nav .active {
+            color: #000 !important;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        /* TITRES */
+        h1 {
+            text-align: center;
+            margin-top: 24px;
+            color: #333;
+        }
+
+        .sous-titre {
+            text-align: center;
+            color: #212529bf;
+            margin-bottom: 3rem;
+        }
+
+        /* CARTES OFFRES */
+        .offre {
+            box-shadow: 0 0.125rem 0.25rem #00000013;
+            border: 1px solid #0000002d;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 320px;
+        }
+
+        .card-header {
+            background: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+            border-radius: 10px 10px 0 0 !important;
+            padding: 12px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .card-body {
+            padding: 1rem;
+        }
+
+        .text-gris {
+            color: #6c757d;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #78baea;
+            color: #333;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .dflex {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: space-between;
+        }
+
+        article:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+
+        .cartes {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="dflex">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+
+                <!-- bouton mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- liens menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="#">Caractéristiques</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Entreprise</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Tarification</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <!-- TITRE -->
+            <h1>Nos Offres</h1>
+            <p class="sous-titre">
+                Choisissez le plan qui correspond le mieux à votre activité. Profitez d’outils puissants,
+                d’un stockage sécurisé et d’une assistance disponible à tout moment.
+            </p>
+
+            <!-- CARTES -->
+            <section class="cartes">
+
+                <!-- Gratuit -->
+                <article class="offre text-center">
+                    <div class="card-header">
+                        Gratuit
+                    </div>
+                    <div class="card-body">
+                        <h2>0 $<small class="text-gris"> / mois</small>
+                        </h2>
+                        <p>
+                            10 utilisateurs inclus<br>
+                            2 Go de stockage<br>
+                            Assistance par e-mail<br>
+                            <a href="#">Accès au centre d'aide</a>
+                        </p>
+                        <button type="button" class="btn btn-outline-primary w-100">Inscription gratuite</button>
+                    </div>
+                </article>
+
+                <!-- Pro -->
+                <article class="offre text-center">
+                    <div class="card-header">
+                        Pro
+                    </div>
+                    <div class="card-body">
+                        <h2>15 $<small class="text-gris"> / mois</small>
+                        </h2>
+                        <p>20 utilisateurs inclus<br>10 Go de stockage<br>Assistance par e-mail prioritaire<br>
+                            <a href="#">Accès au centre d’aide</a>
+                        </p>
+                        <button class="btn btn-primary">Commencer</button>
+                    </div>
+                </article>
+
+                <!-- Entreprise -->
+                <article class="offre text-center">
+                    <div class="card-header">
+                        Entreprise
+                    </div>
+                    <div class="card-body">
+                        <h2>29 $<small class="text-gris"> / mois</small>
+                        </h2>
+                        <p>30 utilisateurs inclus<br>15 Go de stockage<br>Assistance par téléphone et e-mail<br>
+                            <a href="#">Accès au centre d’aide</a>
+                        </p>
+                        <button class="btn btn-primary">Contactez-nous</button>
+                    </div>
+                </article>
+
+            </section>
+        </div>
+        <!-- FOOTER -->
+        <footer>
+            © 2025 MonEntreprise. Tous droits réservés.
+        </footer>
+    </div>
+
+    <!-- Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
